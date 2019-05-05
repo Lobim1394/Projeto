@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    
+}
+body{
+    background-image: url(../img/fundo.jpg);
+}
+.cor{
+    background-color: darkgreen;
+}

@@ -62,8 +62,8 @@
       <p class="text-center">Preencha todos os campos.</p>
 
       <div class="container">
-          <div class="row justify-content-center">
-            <form>
+        <div class="row justify-content-center">
+          <form>
             <div class="form-group">
               <label for="inputNome">Nome Completo</label>
               <input type="text" class="form-control" id="inputNome" placeholder="Informe seu nome completo">
@@ -74,23 +74,26 @@
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="inputCpf">CPF</label>
-                <input type="text" class="form-control" id="inputCpf" placeholder="000.000.000-00">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" class="form-control" id="cpf" placeholder="000.000.000-00">
               </div>
               <div class="form-group col-md-6">
                 <label for="inputData">Data de Nascimento</label>
-                <input type="data" class="form-control" id="inputData" placeholder="___/___/___">
+                <input type="date" name="date" class="form-control">
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputSexo">Sexo</label>
-                <select id="inputSexo" class="form-control">
-                  <option selected>Outros</option>
-                  <option>Masculino</option>
-                  <option>Feminino</option>
-                </select>
+              <div class="form-group">
+                Sexo:
+                <input type="radio" name="sexo" value="masculino" id="masculino" checked>
+                <label for="masculino">masculino</label>
+                <input type="radio" name="sexo" value="feminino" id="feminino">
+                <label for="feminino">feminino</label>
+                <input type="radio" name="sexo" value="outros" id="outros">
+                <label for="outros">Outros</label>
               </div>
+            </div>
+            <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputTelephone">Telefone</label>
                 <input type="text" class="form-control" id="inputTelephone" placeholder="(xx) xxxxx-xxxx">
@@ -101,13 +104,14 @@
                 <label for="inputSenha">Senha</label>
                 <input type="password" class="form-control" id="inputSenha" placeholder="Informe uma Senha">
               </div>
-              <div class="form-group col-md-6">
-                <label for="inputUsuario">Tipo de Usuário</label>
-                <select id="inputUsuario" class="form-control">
-                  <option selected>Selecione</option>
-                  <option>Administrador</option>
-                  <option>Cliente</option>
-                </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                Tipo de Usuário:
+                <input type="radio" name="tipo" value="admistrador" id="admistrador" checked>
+                <label for="admistrador">Admistrador</label>
+                <input type="radio" name="tipo" value="cliente" id="cliente">
+                <label for="cliente">Cliente</label>
               </div>
             </div>
             <div class="form-group">
@@ -126,7 +130,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Registrar</button>
           </form>
-          </div>
+        </div>
       </div>
     </main>
   </div>
