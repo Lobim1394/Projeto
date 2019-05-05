@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="cadastro">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cadastro</title>
+
+  <link rel="stylesheet" href="..//css/bootstrap.min.css">
+  <link rel="stylesheet" href="..//css/bootstrap.min.css.map">
+  <link rel="stylesheet" href="..//css/custom.css">
+  <link rel="stylesheet" href="..//css/font-awesome.min.css">
+  <link rel="stylesheet" href="..//css/layout.css">
+  <link rel="stylesheet" href="..//css/navbar.css">
+  <link rel="stylesheet" href="..//css/sidebar.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top row">
+      <div class="d-sm-block text-center brand-name">
+        <a class="" href="../pages/home.html">Sniffer wolf</a>
+      </div>
+      <div class="container-fluid navbar-content">
+        <a id="menu-toggle" href="">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div>
+    <nav class="d-sm-block sidebar">
+      <ul class="nav flex-column">
+        <li class="nav-item nav-heading">
+          <span class="text-muted">Menu</span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <i class="fa fa-tachometer" aria-hidden="true"></i>
+            <span>Veja</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+            <span>Estatisticas</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cadastro">
+            <i class="fa fa-file-text" aria-hidden="true"></i>
+            <span>Cadastro</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main role="main" class="container-fluid">
+      <h1 class="text-center">Faça seu cadastro</h1>
+      <p class="text-center">Preencha todos os campos.</p>
+
+      <div class="container">
+          <div class="row justify-content-center">
+            <form>
+            <div class="form-group">
+              <label for="inputNome">Nome Completo</label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Informe seu nome completo">
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="text" class="form-control" id="inputEmail" placeholder="exemplo@email.com">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCpf">CPF</label>
+                <input type="text" class="form-control" id="inputCpf" placeholder="000.000.000-00">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputData">Data de Nascimento</label>
+                <input type="data" class="form-control" id="inputData" placeholder="___/___/___">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputSexo">Sexo</label>
+                <select id="inputSexo" class="form-control">
+                  <option selected>Outros</option>
+                  <option>Masculino</option>
+                  <option>Feminino</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputTelephone">Telefone</label>
+                <input type="text" class="form-control" id="inputTelephone" placeholder="(xx) xxxxx-xxxx">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputSenha">Senha</label>
+                <input type="password" class="form-control" id="inputSenha" placeholder="Informe uma Senha">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputUsuario">Tipo de Usuário</label>
+                <select id="inputUsuario" class="form-control">
+                  <option selected>Selecione</option>
+                  <option>Administrador</option>
+                  <option>Cliente</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEndereco">Endereço</label>
+              <input type="text" class="form-control" id="inputEndereco" placeholder="Rua dos exemplos, n 00">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCidade">Cidade</label>
+                <input type="text" class="form-control" id="inputCidade">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputCep">CEP</label>
+                <input type="text" class="form-control" id="inputCep" placeholder="00000-000">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+          </form>
+          </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
