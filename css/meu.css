@@ -1,7 +1,10 @@
 body{
-    background-color: aquamarine;
+    background-image: url(../img/lobo-negro.jpg);
 }
 .cor{
     color: black;
     text-align: center;
+}
+.letras{
+    color: white;
 }
