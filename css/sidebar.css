@@ -8,7 +8,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   border-right: 1px solid #eee;
-  background: #ffffff;
+  background: darkgray;
 }
 
 .sidebar .nav-link {
@@ -47,7 +47,7 @@
 }
 
 .sidebar .nav-link:hover {
-  color: #435966 !important;
+  color: #57c5a5 !important;
   text-decoration: none;
 }
 
