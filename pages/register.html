@@ -30,41 +30,8 @@
       </div>
     </nav>
   </header>
-
   <div>
-    <nav class="d-sm-block sidebar">
-      <ul class="nav flex-column">
-        <li class="nav-item nav-heading">
-          <span class="text-muted">Menu</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">
-            <i class="fa fa-tachometer" aria-hidden="true"></i>
-            <span>Nosso Objetivo</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fa fa-bar-chart" aria-hidden="true"></i>
-            <span>Como é nosso trabalho</span>
-          </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fa fa-briefcase" aria-hidden="true"></i>
-              <span>Trabalhe Conosco</span>
-            </a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#cadastro">
-            <i class="fa fa-file-text" aria-hidden="true"></i>
-            <span>Cadastro</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <main role="main" class="container-fluid">
+    
       <h1 class="cor letras">Faça seu cadastro</h1>
       <p class="text-center letras">Preencha todos os campos.</p>
 
@@ -72,12 +39,12 @@
         <div class="row justify-content-center letras">
           <form>
             <div class="form-group">
-              <label for="inputNome">Nome Completo</label>
-              <input type="text" class="form-control" id="inputNome" placeholder="Informe seu nome completo">
+              <label for="nome">Nome Completo</label>
+              <input type="text" class="form-control" id="nome" placeholder="Informe seu nome completo">
             </div>
             <div class="form-group">
-              <label for="inputEmail">Email</label>
-              <input type="text" class="form-control" id="inputEmail" placeholder="exemplo@email.com">
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="exemplo@email.com">
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -85,7 +52,7 @@
                 <input type="text" name="cpf" class="form-control" id="cpf" placeholder="000.000.000-00">
               </div>
               <div class="form-group col-md-6">
-                <label for="inputData">Data de Nascimento</label>
+                <label for="date">Data de Nascimento</label>
                 <input type="date" name="date" class="form-control">
               </div>
             </div>
@@ -102,12 +69,12 @@
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="inputTelephone">Telefone</label>
-                <input type="text" class="form-control" id="inputTelephone" placeholder="(xx) xxxxx-xxxx">
+                <label for="tel">Telefone</label>
+                <input type="text" class="form-control" id="tel" placeholder="(xx) xxxxx-xxxx">
               </div>
               <div class="form-group col-md-6">
-                <label for="inputSenha">Senha</label>
-                <input type="password" class="form-control" id="inputSenha" placeholder="Informe uma Senha">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Informe uma Senha">
               </div>
             </div>
             <div class="form-row">
@@ -120,20 +87,21 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="inputEndereco">Endereço</label>
-              <input type="text" class="form-control" id="inputEndereco" placeholder="Rua dos exemplos, n 00">
+              <label for="endereco">Endereço</label>
+              <input type="text" class="form-control" id="endereco" placeholder="Rua dos exemplos, n 00">
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="inputCidade">Cidade</label>
-                <input type="text" class="form-control" id="inputCidade">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" id="cidade">
               </div>
               <div class="form-group col-md-6">
-                <label for="inputCep">CEP</label>
-                <input type="text" class="form-control" id="inputCep" placeholder="00000-000">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" id="cep" placeholder="00000000">
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Registrar</button>
+            <button id="registrar" type="submit" class="btn btn-primary">Registrar</button>
+            <script src="../js/register.js"></script>
           </form>
         </div>
       </div>

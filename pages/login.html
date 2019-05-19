@@ -2,96 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
 
-    <link rel="stylesheet" href="..//css/bootstrap.min.css">
-    <link rel="stylesheet" href="..//css/bootstrap.min.css.map">
-    <link rel="stylesheet" href="..//css/custom.css">
-    <link rel="stylesheet" href="..//css/font-awesome.min.css">
-    <link rel="stylesheet" href="..//css/layout.css">
-    <link rel="stylesheet" href="..//css/navbar.css">
-    <link rel="stylesheet" href="..//css/sidebar.css">
-    <link rel="stylesheet" href="../css/meu.css">
+  <link rel="stylesheet" href="..//css/bootstrap.min.css">
+  <link rel="stylesheet" href="..//css/bootstrap.min.css.map">
+  <link rel="stylesheet" href="..//css/custom.css">
+  <link rel="stylesheet" href="..//css/font-awesome.min.css">
+  <link rel="stylesheet" href="..//css/layout.css">
+  <link rel="stylesheet" href="..//css/navbar.css">
+  <link rel="stylesheet" href="..//css/sidebar.css">
+  <link rel="stylesheet" href="../css/meu.css">
 </head>
 
 <body>
-    <header class="color: blue;" >
-        <nav class="navbar fixed-top row">
-            <div class="d-sm-block text-center brand-name">
-                <a class="" href="../pages/home.html">Sniffer wolf</a>
-            </div>
-            <div class="container-fluid navbar-content">
-                <a id="menu-toggle" href="">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </a>
-                <a href=""><i class="fa fa-user"></i></a>
-            </div>
-        </nav>
-    </header>
+  <header class="color: blue;">
+    <nav class="navbar fixed-top row">
+      <div class="d-sm-block text-center brand-name">
+        <a class="" href="../pages/home.html">Sniffer wolf</a>
+      </div>
+      <div class="container-fluid navbar-content">
+        <a id="menu-toggle" href="">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <a href=""><i class="fa fa-user"></i></a>
+      </div>
+    </nav>
+  </header>
 
-    <div>
-            <nav class="d-sm-block sidebar">
-                    <ul class="nav flex-column">
-                      <li class="nav-item nav-heading">
-                        <span class="text-muted">Menu</span>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                          <i class="fa fa-tachometer" aria-hidden="true"></i>
-                          <span>Nosso Objetivo</span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                          <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                          <span>Como é nosso trabalho</span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">
-                            <i class="fa fa-briefcase" aria-hidden="true"></i>
-                            <span>Trabalhe Conosco</span>
-                          </a>
-                        </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/Register.html">
-                          <i class="fa fa-file-text" aria-hidden="true"></i>
-                          <span>Cadastro</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
+  <div>
+    
+      <h1 class="cor letras">Faça seu Login</h1>
 
-        <main role="main" class="container">
-            <h1 class="cor letras">Faça seu Login</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+          </div>
+          <div class="col-4 letras">
+            <form>
+              <div class="form-group">
+                <label for="InputEmail1">Email</label>
+                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                  placeholder="Digite seu email">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                    </div>
-                    <div class="col-4 letras">
-                        <form>
-                            <div class="form-group">
-                                <label for="InputEmail1">Email</label>
-                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
-                                    placeholder="Digite seu email">
-
-                            </div>
-                            <div class="form-group">
-                                <label for="InputPassword1">Senha</label>
-                                <input type="password" class="form-control" id="InputPassword1"
-                                    placeholder="Informe sua senha">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Acessar</button>
-                        </form>
-                    </div>
-                    <div class="col-4">
-                    </div>
-                </div>
-            </div>
+              </div>
+              <div class="form-group">
+                <label for="InputPassword1">Senha</label>
+                <input type="password" class="form-control" id="InputPassword1" placeholder="Informe sua senha">
+              </div>
+              <button type="submit" class="btn btn-primary">Acessar</button>
+              <script src="../js/login.js"></script>
+            </form>
+          </div>
+          <div class="col-4">
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>
